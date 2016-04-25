@@ -10,7 +10,7 @@ gdbserver:
 	gdbserver :3333 ./sample.elf
 
 gdbauto:
-	gdb -q ./sample.elf
+	gdb -tui -x gdbauto.gdb
 
 cgdb:
 	cgdb -x gdbauto.gdb
